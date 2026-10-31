@@ -1,0 +1,223 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(53, 52, 52);
+    max-width: 100%;
+    max-height: 17%;
+    border-bottom: 0.3vh solid white;
+}
+
+.navbar__logo{
+    padding: 5vh;
+    width: 17%;
+}
+
+.navbar__link{
+    margin-right: 20vh;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar__link:hover{
+    text-decoration: underline;
+    transform: scale(1.25);
+    transition: 0.5s;
+    font-weight: bold;
+}
+/* HERO */
+header{
+    display: flex;
+    justify-content: center;
+}
+.hero{
+    text-align: center;
+    margin: 3vh;
+    border-radius: 2vh;
+    padding: 5vh;
+    width: 55%;
+    height: 10%;
+    background-color: rgb(95, 94, 94);
+}
+.hero__titulo{
+    font-size: 3.5vh;
+}
+.hero__texto{
+    font-size: 2.5vh;
+}
+
+/* CATALOGO */
+.catalogo__titulo{
+    width: 100%;
+    text-align: center;
+}
+.caixa{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5vh;
+}
+/* BADGE */
+.badge{
+    position: relative;
+    right: -39%;
+    top: -6%;
+    border-radius: 0.6vh;
+    background-color: rgb(115, 113, 113);
+    color: black;
+    font-weight: bold;
+    padding: 0.7vh;
+}
+.badge--picante{
+    background-color: rgb(203, 65, 65);
+}
+.badge--frutosmar{
+    background-color: rgb(65, 143, 203);
+}
+.badge--caldo{
+    background-color: rgb(203, 134, 65);
+}
+/* AVATAR */
+.avatar{
+    margin: 1vh;
+    border-radius: 0.8vh;
+    width: 55%;
+}
+.avatar--destaque{
+    border: 0.3vh solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+/* CARD */
+.card{
+    text-align: center;
+    margin: 5vh auto;
+    padding: 2vh;
+    border-radius: 2vh;
+    background-color: rgb(83, 80, 80);
+    width: 40%;
+    height: 85%;
+}
+.card__titulo{
+    font-weight: bolder;
+    font-size: 2.5vh;
+}
+.card__texto{
+    text-align: justify;
+    font-weight: 400;
+}
+.card__preco, .card__texto{
+    margin: 1vh;
+}
+.card__preco{
+    text-align: left;
+    font-weight: bolder;
+}
+
+/* BUTTON */
+.btn{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(53, 52, 52);
+    padding: 0.9vh;
+    transition: 0.5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.btn--primario{
+    margin: 2.5vh;
+    width: 13%;
+}
+.btn--secundario{
+    font-size: 2.4vh;
+    width: 15%;
+    margin: 4vh;
+}
+/* AVALIAÇÂO */
+.avaliacoes{
+    text-align: center;
+}
+.avaliacoes__titulo{
+    margin: 3vh;
+}
+.avaliacao{
+    border-radius: 2vh;
+    height: 100%;
+    padding: 5vh;
+    background-color: rgb(130, 131, 130);
+}
+.avaliacao__nome{
+    font-weight: bolder;
+    font-size: 4vh;
+}
+.avaliacao__texto{
+    text-align: left;
+    font-size: 2.5vh;
+}
+
+/* FORM */
+.formulario{
+    border-radius: 2vh;
+    text-align: center;
+    margin: 5vh auto;
+    width: 85%;
+    height: 60%;
+    background-color: rgb(130, 131, 130);
+}
+.formulario__titulo{
+    margin: 5vh;
+}
+.form{
+    margin: 4vh;
+}
+.form__label{
+    margin: 1vh;
+    font-size: 1.9vh;
+}
+.form__input{
+    color: black;
+    margin: 0.3vh;
+    width: 18%;
+}
+.form__input::placeholder{
+    color: black
+}
+.form__mesa{
+    margin: 1vh;
+    accent-color: black;
+}
+.form__fieldset{
+    font-size: 2.5vh;
+    margin: 2.2vh;
+    padding: 3vh;
+}
+/* FOOTER */
+.footer{
+    padding: 2vh;
+    border-top: 0.3vh solid white;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(95, 94, 94);
+}
+
+.footer__texto{
+    text-align: center;
+    font-size: 1.8vh;
+    padding: 0.2vh;
+}
